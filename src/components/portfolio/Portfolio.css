@@ -1,0 +1,100 @@
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio-item {
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+
+  display: flex;               /* Faz o card um flex container */
+  flex-direction: column;      /* Conteúdo em coluna */
+  height: 100%;                /* Necessário para o margin-top auto dos botões */
+}
+
+.portfolio-item:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.portfolio-item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  height: 200px; /* altura fixa para padronizar os cards */
+}
+
+.portfolio-item-content {
+  margin-top: 1rem;
+  flex: 1;                    /* Faz o conteúdo ocupar o espaço restante */
+}
+
+.portfolio-item-content h3 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.portfolio-item-content p {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.portfolio-item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;           /* empurra os botões para o final do card */
+  flex-wrap: wrap;            /* permite quebrar linha em telas pequenas */
+}
+
+/* BOTÕES */
+.portfolio-btn {
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.portfolio-btn:hover {
+  background-color: var(--color-white);
+  color: #2c2c6c;
+}
+
+.portfolio-btn-primary {
+  background-color: var(--color-primary);
+  color: #2c2c6c;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.portfolio-btn-primary:hover {
+  background-color: var(--color-white);
+  color: #2c2c6c;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

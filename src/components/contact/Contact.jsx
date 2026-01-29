@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaWhatsapp } from 'react-icons/fa';
-import './contact.css';
+import './Contact.css';
 
 const Contact = () => {
   return (

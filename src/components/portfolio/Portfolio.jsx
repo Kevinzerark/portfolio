@@ -1,7 +1,7 @@
 import img1 from "../../assets/img/screenshot-todo.png";
 import img2 from "../../assets/img/screenshot-movie.png";
 
-import "./portfolio.css";
+import "./Portfolio.css";
 
 const projects = [
   {

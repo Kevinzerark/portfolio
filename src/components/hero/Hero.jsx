@@ -1,5 +1,5 @@
 import "./Hero.css";
-import ME from "../../assets/img/me.jpg";
+import ME from "../../assets/img/me.jpeg";
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 
